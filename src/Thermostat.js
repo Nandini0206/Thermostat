@@ -12,4 +12,4 @@ Thermostat.prototype.up = function(degrees) {
 
 Thermostat.prototype.down = function(degrees) {
   this.temperature -= degrees
-}
+};
