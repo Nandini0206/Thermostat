@@ -11,10 +11,16 @@ describe('Thermostat', function(){
     });
   });
 
-  describe('increase temperature',function(degrees){
-    it('increase temperature by 5 degrees', function(degrees){
-      thermostat.up(5);
+  describe('up',function(degrees){
+    it('increases temperature', function(degrees){
+      thermostat.up();
       expect(thermostat.temperature)toEqual(25)
+    });
+  });
+
+  describe('down', function(degrees){
+    it('decreases temperature', function(degrees){
+      expect(thermostat.temperature)toEqual(15)
     });
   });
 });
