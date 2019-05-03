@@ -31,4 +31,15 @@ describe('Thermostat', function(){
       expect(function() {thermostat.down()}).toThrow('Temperature is too low')
     });
   });
+
+  describe('Power Saving Mode ', function(){
+    it('PSM is on by default', function(){
+      expect(thermostat.powerSaveOn()).toEqual(true);
+    });
+
+    it('PSM is turned off', function(){
+      thermostat.powerSaveOff();
+      expect(thermostat.powerSavingMode).toEqual(false);
+    });
+  });
 });
