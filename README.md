@@ -20,3 +20,10 @@ The following requirements were satisfied:
 6. The minimum temperature is 10 degrees.
 7. Temperature can be reset to 20 degrees using a reset function.
 8. Thermostats current energy usage can be shown (<18 : low-usage, <25 : medium-usage, higher : high-usage).
+
+## How to Use:
+
+1. Open in chrome:
+```
+SpecRunner.html
+```
